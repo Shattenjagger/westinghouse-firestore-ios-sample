@@ -12,9 +12,13 @@
 		A6C0CB5C22E0CCFD0081EFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C0CB5A22E0CCFD0081EFD5 /* Main.storyboard */; };
 		A6C0CB5E22E0CCFF0081EFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C0CB5D22E0CCFF0081EFD5 /* Assets.xcassets */; };
 		A6C0CB6122E0CCFF0081EFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C0CB5F22E0CCFF0081EFD5 /* LaunchScreen.storyboard */; };
+		A6C0CB6922E0CD390081EFD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C0CB6822E0CD390081EFD5 /* GoogleService-Info.plist */; };
+		F0F058FFD8DF820817F1B44C /* Pods_westinghouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B547F8F7CCE29ADE3E805CB /* Pods_westinghouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B547F8F7CCE29ADE3E805CB /* Pods_westinghouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_westinghouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDE686F7BA0CD8FE6EEFAA2 /* Pods-westinghouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-westinghouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-westinghouse/Pods-westinghouse.release.xcconfig"; sourceTree = "<group>"; };
 		A6C0CB5322E0CCFD0081EFD5 /* westinghouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = westinghouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C0CB5622E0CCFD0081EFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6C0CB5822E0CCFD0081EFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A6C0CB5D22E0CCFF0081EFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C0CB6022E0CCFF0081EFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C0CB6222E0CCFF0081EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C0CB6822E0CD390081EFD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEA85E546091B99F52D259AE /* Pods-westinghouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-westinghouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-westinghouse/Pods-westinghouse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F058FFD8DF820817F1B44C /* Pods_westinghouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A717619BC35F5A4CF7A21D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEA85E546091B99F52D259AE /* Pods-westinghouse.debug.xcconfig */,
+				1BDE686F7BA0CD8FE6EEFAA2 /* Pods-westinghouse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62750129A5D1C6ECA5DAA321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B547F8F7CCE29ADE3E805CB /* Pods_westinghouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6C0CB4A22E0CCFC0081EFD5 = {
 			isa = PBXGroup;
 			children = (
 				A6C0CB5522E0CCFD0081EFD5 /* westinghouse */,
 				A6C0CB5422E0CCFD0081EFD5 /* Products */,
+				2A717619BC35F5A4CF7A21D5 /* Pods */,
+				62750129A5D1C6ECA5DAA321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				A6C0CB5D22E0CCFF0081EFD5 /* Assets.xcassets */,
 				A6C0CB5F22E0CCFF0081EFD5 /* LaunchScreen.storyboard */,
 				A6C0CB6222E0CCFF0081EFD5 /* Info.plist */,
+				A6C0CB6822E0CD390081EFD5 /* GoogleService-Info.plist */,
 			);
 			path = westinghouse;
 			sourceTree = "<group>";
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C0CB6522E0CCFF0081EFD5 /* Build configuration list for PBXNativeTarget "westinghouse" */;
 			buildPhases = (
+				5746CCBB0DC35DF7D8F136E5 /* [CP] Check Pods Manifest.lock */,
 				A6C0CB4F22E0CCFC0081EFD5 /* Sources */,
 				A6C0CB5022E0CCFC0081EFD5 /* Frameworks */,
 				A6C0CB5122E0CCFC0081EFD5 /* Resources */,
+				5EE4C1363099C2C40ACECEF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C0CB6122E0CCFF0081EFD5 /* LaunchScreen.storyboard in Resources */,
+				A6C0CB6922E0CD390081EFD5 /* GoogleService-Info.plist in Resources */,
 				A6C0CB5E22E0CCFF0081EFD5 /* Assets.xcassets in Resources */,
 				A6C0CB5C22E0CCFD0081EFD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5746CCBB0DC35DF7D8F136E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-westinghouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE4C1363099C2C40ACECEF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-westinghouse/Pods-westinghouse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-westinghouse/Pods-westinghouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6C0CB4F22E0CCFC0081EFD5 /* Sources */ = {
@@ -280,11 +367,13 @@
 		};
 		A6C0CB6622E0CCFF0081EFD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA85E546091B99F52D259AE /* Pods-westinghouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QDGZ7FHYA;
 				INFOPLIST_FILE = westinghouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +381,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.example.westinghouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A6C0CB6722E0CCFF0081EFD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDE686F7BA0CD8FE6EEFAA2 /* Pods-westinghouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QDGZ7FHYA;
 				INFOPLIST_FILE = westinghouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.example.westinghouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
